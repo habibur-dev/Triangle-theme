@@ -1,0 +1,14 @@
+/*
+Theme Name: Triangle
+Theme URI: https://profiles.wordpress.org/habiburdev/
+Author: Habibur
+Author URI: https://profiles.wordpress.org/habiburdev/
+Description: Basic theme development practice. From "Triangle" HtML template to WordPress Theme.
+Version: 1.0
+Text Domain: triangle
+*/
+
+.search button.btn.btn-sm.btn-primary{
+    padding: 10px;
+    margin-top: -5px;
+}
