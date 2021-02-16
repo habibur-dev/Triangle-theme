@@ -3,22 +3,20 @@
 get_header(); 
 ?>
 
-
-    <section id="page-breadcrumb">
-        <div class="vertical-center sun">
-             <div class="container">
-                <div class="row">
-                    <div class="action">
-                        <div class="col-sm-12">
-                            <h1 class="title">Blog</h1>
-                            <p>Blog with right sidebar</p>
-                        </div>
-                    </div>
+    <?php if(get_theme_mod('banner_image')): ?>
+    <section class="home-banner" style="background: url('<?php echo esc_url(get_theme_mod("banner_image")); ?>'); height: 350px; display: flex; align-items: center;">
+    <?php endif; ?>
+        <div class="container">
+            <div class="main-banner" style="max-width: 500px;">
+                <div class="banner-text">
+                    <h1>We Are Creative Nerds</h1>
+                    <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
+                    <a href="#" class="btn btn-common">SIGN UP</a>
                 </div>
             </div>
         </div>
-   </section>
-    <!--/#action-->
+    </section>
+    <!--/#home-slider-->
 
     <section id="blog" class="padding-top">
         <div class="container">
