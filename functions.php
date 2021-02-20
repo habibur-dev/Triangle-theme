@@ -96,4 +96,10 @@ function add_link_class($atts)
 
 add_filter('nav_menu_link_attributes', 'add_link_class');
 
+function triangle_custom_exerpt($length){
+  return 20;
+}
+
+add_filter('excerpt_length', 'triangle_custom_exerpt');
+
 ?>

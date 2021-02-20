@@ -1667,8 +1667,8 @@ Blog with right sidebar
 .single-blog .post-overlay span a{
   margin-left: 8px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 18px;
+  font-size: 28px;
+  line-height: 28px;
   position: absolute;
   top: 50px;
 }
@@ -2685,6 +2685,3 @@ span.stButton_gradient,
 }
 
 
-.home-banner{
-  background: url('./images/home.png') !important;
-}
