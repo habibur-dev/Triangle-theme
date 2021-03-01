@@ -35,7 +35,15 @@ get_header();
                     </div>
                     <div class="blog-pagination">
                         <ul class="pagination">
-                          <li><a href="#">left</a></li>
+
+                        <?php 
+                        echo  paginate_links(array(
+                            'mid_size' => 2,
+                            'prev_text' => __('<i class="fas fa-backward"></i>'),
+                            'next_text' => __('<i class="fas fa-forward"></i>')
+                        ));
+                        ?>
+                          <!-- <li><a href="#">Left</a></li>
                           <li><a href="#">1</a></li>
                           <li><a href="#">2</a></li>
                           <li class="active"><a href="#">3</a></li>
@@ -45,13 +53,13 @@ get_header();
                           <li><a href="#">7</a></li>
                           <li><a href="#">8</a></li>
                           <li><a href="#">9</a></li>
-                          <li><a href="#">right</a></li>
+                          <li><a href="#">right</a></li> -->
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-5">
                     <div class="sidebar blog-sidebar">
-                        <div class="sidebar-item  recent">
+                        <!-- <div class="sidebar-item  recent">
                             <h3>Comments</h3>
                             <div class="media">
                                 <div class="pull-left">
@@ -115,7 +123,9 @@ get_header();
                                 <li><a href="#"><img src="images/portfolio/popular5.jpg" alt=""></a></li>
                                 <li><a href="#"><img src="images/portfolio/popular1.jpg" alt=""></a></li>
                             </ul>
-                        </div>
+                        </div> -->
+
+                        <?php dynamic_sidebar('main-sidebar'); ?>
                     </div>
                 </div>
             </div>

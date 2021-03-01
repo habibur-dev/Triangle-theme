@@ -102,4 +102,26 @@ function triangle_custom_exerpt($length){
 
 add_filter('excerpt_length', 'triangle_custom_exerpt');
 
+/**
+ * =====================================
+ *             Sidebar       
+ * =====================================
+ */
+function register_my_sidebar()
+{
+    register_sidebar(
+        array(
+            'id' => 'main-sidebar',
+            'name' => __('Main Sidebr'),
+            'description' => __('Main sidebar. Also right sidebar'),
+            'before_widget' => '<aside id="%1$s" class="sidebar %2$s">',
+            'after_widget' => '</aside>',
+            'before_title' => '<h3 class="sidebar-widget-title">',
+            'after_title' => '</h3>'
+        )
+    );
+}
+
+add_action('widgets_init', 'register_my_sidebar');
+
 ?>
